@@ -1,0 +1,33 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "project": "studylanz-daw",
+  "defaultProvider": "google",
+  "memoryFile": "agents.md",
+  "providers": {
+    "google": {
+      "name": "Google Gemini API",
+      "envKey": "GEMINI_API_KEY",
+      "models": {
+        "default": "gemini-2.5-flash",
+        "reasoning": "gemini-2.5-pro"
+      }
+    },
+    "openrouter": {
+      "name": "OpenRouter Cloud",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "envKey": "OPENROUTER_API_KEY",
+      "models": {
+        "default": "cohere/north-mini-code:free",
+        "fallback": "nvidia/nemotron-3-nano:free"
+      }
+    },
+    "ollama": {
+      "name": "Ollama Local Server",
+      "baseUrl": "http://localhost:11434/v1",
+      "models": {
+        "fast": "llama3.2:3b",
+        "coder": "qwen2.5-coder:1.5b"
+      }
+    }
+  }
+}

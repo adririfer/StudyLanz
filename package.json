@@ -1,0 +1,22 @@
+{
+  "name": "studylanz-daw",
+  "version": "1.0.0",
+  "description": "StudyLanz DAW: Gestor de entregas y asistente de estudio con IA (Ollama + OpenRouter + Gemini) diseñado con OpenCode",
+  "type": "module",
+  "scripts": {
+    "start": "node dist/cli.js",
+    "web": "node dist/server.js",
+    "test": "node dist/validador.test.js",
+    "validate": "node dist/validador.js"
+  },
+  "keywords": [
+    "daw2",
+    "opencode",
+    "ollama",
+    "gemini",
+    "openrouter",
+    "llmfit"
+  ],
+  "author": "Adrián Rivas Fernández",
+  "license": "MIT"
+}
